@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset ="UTF-8">
+    <title></title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0 ;
+        }
+        ul,ol,li{
+            list-style:none;
+        }
+        a{
+            text-decoration: none;
+        }
+        p,li1,li2,li{
+            font-family: 微软雅黑
+        }
+        .head1{
+            height: 30px;
+            background-color: rgb(244,244,244);
+        }
+        .head2{
+            width: 1200px;
+            height: 30px;
+            background-color: rgb(244,244,244);
+            margin-left: 180px;
+            line-height: 30px;
+            font-size: 12px;
+        }
+        .head2 li1{
+            margin-right: 10px;
+            float: left;
+        }
+        .head2 li2{
+            float: right;
+            margin-left: 10px;
+        }
+        .head2 li2 a{
+            color: black;
+        }
+        .head2 li1 img{
+            float: left;
+            margin-top: 4px;
+        }
+        .body1{
+            height: 160px;
+            background-color: white;
+            border-bottom: 3px solid rgb(224,3,4);
+        }
+        .body2{
+            height: 160px;
+            width: 1200px;
+            margin-left: 180px;
+        }
+        .body2 img{
+            float: left;
+        }
+        .sousuo{
+            height: 40px;
+            margin-left: 200px;
+            float: left;
+            margin-top: 40px;
+            margin-bottom: 23px;
+        }
+        .sousuo input:last-child{
+            width: 95px;
+            height: 42px;
+            background: rgb(248,56,56);
+            color: white;
+            float:right;
+            text-align: center;
+            line-height: 40px;
+            border:0;
+        }
+        .body2 a{
+            font-size: 17px;
+            color: white;
+        }
+        .gouwu{
+            margin-left: 150px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            width: 150px;
+            height: 40px;
+            background: rgb(245,245,245);
+            color: black;
+            float: right;
+            text-align: center;
+            line-height: 40px;
+            border: rgb(227,227,227) solid 1px;
+        }
+        .gouwu a{
+            color: rgb(248,56,56);
+        }
+        .gouwu img{
+            margin-left: 8px;
+            margin-top: 7px;
+        }
+        .daohang li{
+            margin-right: 40px;
+            margin-left: 30px;
+            margin-top: 21px;
+            float: left;
+            text-align: center;
+            line-height: 30px;
+        }
+        .daohang li a:link{
+            color: black;
+        }
+        .daohang li a:hover{
+            height: 30px;
+            width: 90px;
+            background-color: rgb(253,3,4);
+            color: white;
+            border-radius: 10%;
+            display: block;
+        }
+        .daohang li a:visited{
+            color: purple;
+        }
+        .yinjie1{
+            height: 650px;
+            background-color: rgb(251,251,251);
+        }
+        .yinjie2{
+            width: 1200px;
+            height: 650px;
+            background-color: rgb(251,251,251);
+            margin-left: 180px;
+        }
+        .yinjie2 p{
+            font-size: 14px;
+            padding-top: 25px;
+            padding-bottom: 30px;
+        }
+        .yinjie2 p a{
+            color: black;
+        }
+        .haha{
+            width: 215px;
+            height: 565px;
+            background: rgb(251,251,251) ;
+            float: left;
+        }
+        .haha1{
+            width: 215px;
+            height: 40px;
+            line-height: 40px;
+            background: white ;
+            margin-bottom: 10px;
+        }
+        .haha1 li{
+            margin-left: 75px;
+        }
+        .haha1 a{
+            color: black;
+        }
+        .haha1 img{
+            margin-top: 5px;
+            float: left;
+            margin-left: 30px;
+        }
+        .hehe{
+            width: 215px;
+            height: 500px;
+            background: white;
+        }
+        .hehe li{
+            font-size: 14px;
+            margin-left:75px ;
+            padding-top: 15px;
+            margin-bottom: 15px;
+        }
+        .hehe a:link{
+            color: black;
+        }
+        .hehe a:hover{
+            color:rgb(255,44,24);
+        }
+        .hehe a:visited{
+            color :rgb(255,44,24);
+        }
+        .xixi{
+            width: 975px;
+            background: white;
+            height: 550px;
+            float: left;
+            margin-left: 10px;
+        }
+        .xixi li{
+            border: 1px solid rgb(219, 219, 219);
+            width: 220px;
+            height:  250px;
+            margin-left:15px;
+            margin-top: 15px;
+            float:  left;
+            text-align:  center;
+        }
+        .xixi span{
+            color: rgb(177, 177, 177);
+            line-height:  25px;
+        }
+        .bottom{
+            height: 250px;
+            color: white;
+            background: black;
+        }
+        .bottom1{
+            font-size: 14px;
+            margin-left: 180px;
+            height:150px ;
+            width: 1200px;
+            border-bottom: 1px solid rgb(69,69,69);
+        }
+        .bottom1 a{
+            color: white;
+        }
+        .bottom1 li{
+            margin-top: 14px;  
+        }
+        .bottom1 ul{
+            float: left;
+            margin-left: 10px;
+            margin-right:170px ;
+        }
+        .bottom1 ul:last-child{
+            margin-right: 10px;
+        }
+        .end{
+            width: 1200px;
+            margin-left: 180px;
+            text-align: center;
+        }
+        .end li{
+            color: rgb(77,77,77);
+            margin-top: 23px;
+            margin-bottom: 18px;
+        }
+        .end a{
+            color: rgb(77,77,77);
+        }
+        .end p{
+            color: rgb(77,77,77);
+        }
+    </style>
+</head>
+<body>
+    <div class="head1">
+        <div class="head2">
+            <ul>
+                <li1>我的收藏</li1>
+                <li1>E族之家手机版</li1>
+                <li1><img src="imgs/qq.png"/>328203328</li1>
+            </ul>
+            <ul>
+                <li2>欢迎来到E族之家，<a href="#">请登录<a>|<a href="#">注册</a></li2>
+                <li2>扫描加入</li2>
+            </ul>
+        </div>
+    </div>
+    <div class="body1">
+        <div class="body2">
+            <img src="imgs/s1.png"/>
+            <div class="sousuo">
+                <input type="text" placeholder="请输入关键词!"
+                style="width: 400px;height:40px;border:1px solid rgb(248,56,56);text-indent:16px;"/>
+                <span class="serch">
+                    <input  type="button" value="搜索"/>
+                </span>
+            </div>
+            <div class="gouwu">
+                <img src="imgs/s2.png"/>
+                <p>购物车（<a href="#">0</a>）件</p>
+            </div>
+            <div class="daohang">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">E族生活</a></li>
+                    <li><a href="#">E族服务</a></li>
+                    <li><a href="#">E族爱心</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="yinjie1">
+        <div class="yinjie2">
+            <p>当前位置：<a href="#">E族爱心</a>><a href="#">食品</a></p>
+            <div class="haha">
+                <div class="haha1">
+                    <img src="imgs/s3.png"/>
+                    <li><a href="#"> 全部分类</a></li>
+                </div>
+                <div class="hehe">
+                    <li><a href="#">>食品</a></li>
+                    <li><a href="#">>生活用品</a></li>
+                </div>
+            </div>
+            <div class="xixi">
+                <ul>
+                    <li><img src="imgs/p1.png"><span>精品辣椒100g</span><br/>￥90.00</li>
+                    <li><img src="imgs/p2.png"/><span>特级百香果3斤</span><br/>￥90.00</li>
+                    <li><img src="imgs/p3.png"/><span>万威啤酒500ml</span><br/>￥90.00</li>
+                    <li><img src="imgs/p4.png"/><span>万威啤酒500ml</span><br/>￥90.00</li>
+                    <li><img src="imgs/p1.png"><span>精品辣椒100g</span><br/>￥90.00</li>
+                    <li><img src="imgs/p2.png"/><span>特级百香果3斤</span><br/>￥90.00</li>
+                    <li><img src="imgs/p3.png"/><span>万威啤酒500ml</span><br/>￥90.00</li>
+                    <li><img src="imgs/p4.png"/><span>万威啤酒500ml</span><br/>￥90.00</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="bottom1">
+            <ul>
+                <li><a href="#">新手上路</a></li>
+                <li><a href="#">售后流程</a></li>
+                <li><a href="#">购物流程</a></li>
+                <li><a href="#">订购方式</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">配送方式</a></li>
+                <li><a href="#">货到付款区域</a></li>
+                <li><a href="#">配送支付查询</a></li>
+                <li><a href="#">支付方式说明</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">购物指南</a></li>
+                <li><a href="#">常见问题</a></li>
+                <li><a href="#">订购流程</a></li>
+                <li><a href="#">注册新会员</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">售后服务</a></li>
+                <li><a href="#">退换货原则</a></li>
+                <li><a href="#">售后服务保障</a></li>
+                <li><a href="#">换货流程</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">网站故障报告</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">投诉与建议</a></li>
+            </ul>
+        </div>
+        <div class="end">
+            <li><a href="#">E族生活</a>|
+                <a href="#">居家维修保养</a> |
+                <a href="#">住宿优惠信息</a> |   
+                <a href="#">出行接送</a> |   
+                <a href="#">E族活动</a> |   
+                <a href="#">E族爱心</a>    |
+                <a href="#">积分商城</a></li>
+
+                <p>© 2017-2018  E族之家  版权所有，并保留所有权利。ICP备案证书号：粤ICP备17127392号</p>
+        </div>
+    </div>
+</body>
+</html>
